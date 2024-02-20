@@ -102,7 +102,7 @@ export const Card = ({
             </div> */}
             <img
               src={user.image}
-              className="text-sm lg:w-[20vw] w-[40vw] h-[50vh]"
+              className="text-sm lg:w-[20vw] w-[40vw] h-[50vh] object-fill"
               alt="thumbnail"
             />
           </motion.div>

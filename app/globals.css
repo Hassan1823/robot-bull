@@ -41,3 +41,16 @@ body {
 .rotated-div {
   transform: rotate(-45deg); /* Adjust the angle as per your requirement */
 }
+
+.slower-animation {
+  animation: slower 80s infinite; /* Define the slower animation with a duration of 80s */
+}
+
+@keyframes slower {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

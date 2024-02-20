@@ -42,7 +42,7 @@ const HeroComp = (props: Props) => {
         </div>
 
         {/* Quote */}
-        <div className="xl:text-xl text-lg font-medium space-y-2 md:w-[70%] text-[#A8AEAE] w-full p-2 md:text-start text-center pr-[5%] md:pr-0">
+        <div className="xl:text-xl text-lg font-medium space-y-2 text-[#A8AEAE] md:w-[80%] w-full p-2 md:text-start text-center pr-[5%] md:pr-0">
           {`Transforming Meme Communities into Marketing Titans! Create, Sell, and Dominate with Unique NFTs on Our Exclusive Marketplace – Your Gateway to Fun, Engagement, and Profit!"`}
         </div>
 
