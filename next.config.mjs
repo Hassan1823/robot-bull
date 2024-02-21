@@ -8,6 +8,7 @@ const nextConfig = {
       "https://drive.google.com/file/d/1eysPXSCNZt8W9A0T_sCr9drRHB1lbxco/view?usp=sharing",
       "drive.google.com",
       "memeaicoin.io",
+      "images.unsplash.com",
     ],
   },
 };

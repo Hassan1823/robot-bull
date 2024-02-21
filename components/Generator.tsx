@@ -43,6 +43,7 @@ const GeneratorComp = (props: Props) => {
               className="object-contain w-full h-full"
             />
           </motion.div>
+
           <motion.div
             className="border py-1 w-full min-h-[40%] h-auto"
             variants={fadeInAnimationVariants}
