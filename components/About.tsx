@@ -82,7 +82,7 @@ const AboutComp = (props: Props) => {
         </motion.p>
 
         <motion.div
-          className=""
+          className="p-4"
           variants={fadeInAnimationVariants}
           initial="initial"
           whileInView="animate"

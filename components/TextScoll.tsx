@@ -60,83 +60,46 @@ const ParallaxText = ({ children, baseVelocity = 100 }: ParallaxProps) => {
   return (
     <div className="overflow-hidden m-0 whitespace-nowrap flex flex-nowrap">
       <motion.div
-        className="font-[600] text-[64px] flex flex-nowrap whitespace-nowrap w-[100vw] space-x-6"
+        className="font-[600] text-[64px] flex flex-nowrap whitespace-nowrap w-[100vw] space-x-6 justify-center items-center text-center"
         style={{ x }}
       >
         {/* children content here */}
-        <div className="w-full h-auto flex flex-nowrap justify-center items-center text-center lg:text-6xl text-5xl font-bold lg:gap-8 gap-4 p-2">
-          <div>
-            <motion.div
-              className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
-              whileHover={{ scale: 1, rotate: 180 }}
-              whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
-            />
-          </div>
-          <p className="">{"Take Your"}</p>
-          <div>
-            <motion.div
-              className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
-              whileHover={{ scale: 1, rotate: 180 }}
-              whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
-            />
-          </div>
-          <p className="strokeText">{"MEMES to the Next Level"}</p>
-        </div>
-        <div className="w-full h-auto flex flex-nowrap justify-center items-center text-center lg:text-6xl text-5xl font-bold lg:gap-8 gap-4 p-2">
-          <div>
-            <motion.div
-              className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
-              whileHover={{ scale: 1, rotate: 180 }}
-              whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
-            />
-          </div>
-          <p className="">{"Take Your"}</p>
-          <div>
-            <motion.div
-              className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
-              whileHover={{ scale: 1, rotate: 180 }}
-              whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
-            />
-          </div>
-          <p className="strokeText">{"MEMES to the Next Level"}</p>
-        </div>
-        <div className="w-full h-auto flex flex-nowrap justify-center items-center text-center lg:text-6xl text-5xl font-bold lg:gap-8 gap-4 p-2">
-          <div>
-            <motion.div
-              className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
-              whileHover={{ scale: 1, rotate: 180 }}
-              whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
-            />
-          </div>
-          <p className="">{"Take Your"}</p>
-          <div>
-            <motion.div
-              className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
-              whileHover={{ scale: 1, rotate: 180 }}
-              whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
-            />
-          </div>
-          <p className="strokeText">{"MEMES to the Next Level"}</p>
-        </div>
-        <div className="w-full h-auto flex flex-nowrap justify-center items-center text-center lg:text-6xl text-5xl font-bold lg:gap-8 gap-4 p-2">
-          <div>
-            <motion.div
-              className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
-              whileHover={{ scale: 1, rotate: 180 }}
-              whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
-            />
-          </div>
-          <p className="">{"Take Your"}</p>
-          <div>
-            <motion.div
-              className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
-              whileHover={{ scale: 1, rotate: 180 }}
-              whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
-            />
-          </div>
-          <p className="strokeText">{"MEMES to the Next Level"}</p>
-        </div>
-
+        <span className="block">
+          {" "}
+          <motion.div
+            className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
+            whileHover={{ scale: 1, rotate: 180 }}
+            whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
+          />
+        </span>
+        <span className="block">Take Your</span>
+        <span className="block">
+          {" "}
+          <motion.div
+            className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
+            whileHover={{ scale: 1, rotate: 180 }}
+            whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
+          />
+        </span>
+        <span className="block strokeText">MEMES to the Next Level</span>
+        <span className="block">
+          {" "}
+          <motion.div
+            className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
+            whileHover={{ scale: 1, rotate: 180 }}
+            whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
+          />
+        </span>
+        <span className="block">Take Your</span>
+        <span className="block">
+          {" "}
+          <motion.div
+            className="w-[50px] h-[50px] border-[5px] border-[#253992] bg-[#253992] rounded-xl"
+            whileHover={{ scale: 1, rotate: 180 }}
+            whileTap={{ scale: 1, rotate: -180, borderRadius: "100%" }}
+          />
+        </span>
+        <span className="block strokeText">MEMES to the Next Level</span>
         {/* Add more Image components here */}
       </motion.div>
     </div>
