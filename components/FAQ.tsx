@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
-import { fadeInAnimationVariants } from "./Hero";
 import { motion } from "framer-motion";
+import { fadeInAnimationVariants } from "./Hero";
+import AccordionComp from "@/utils/accordion";
 
 type Props = {};
 
@@ -40,6 +40,35 @@ const FAQComp = (props: Props) => {
       </motion.div>
 
       {/* FAQ section  */}
+      <motion.div
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        custom={10}
+        className="p-4 bg-transparent rounded-lg w-full"
+      >
+        {/* <AccordionComp /> */}
+        <AccordionComp
+          title={"How does the MEME AI generator revolutionize meme creation?"}
+          answer={
+            "The cutting-edge MEME AI effortlessly transforms your wittiest thoughts into visually stunning and innovative memes."
+          }
+        />
+        <AccordionComp
+          title={"Can I monetize my humor on the platform, and if so, how?"}
+          answer={
+            "Absolutely! Transform your hilarious creations into exclusive NFTs with just a click on our upcoming dedicated marketplace."
+          }
+        />
+        <AccordionComp
+          title={
+            "What sets apart the NFT Marketplace for showcasing digital masterpieces?"
+          }
+          answer={
+            "Our marketplace will allow you to showcase, sell, and collect digital masterpieces, creating an unprecedented level of appreciation."
+          }
+        />
+      </motion.div>
     </div>
   );
 };
