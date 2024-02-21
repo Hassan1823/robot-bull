@@ -24,7 +24,7 @@ body {
   }
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -36,7 +36,7 @@ body {
 ::-webkit-scrollbar-track {
   background-color: rgba(255, 255, 255, 0.487);
   border-radius: 10px;
-}
+} */
 
 .rotated-div {
   transform: rotate(-45deg); /* Adjust the angle as per your requirement */
@@ -53,4 +53,58 @@ body {
   100% {
     transform: translateX(-100%);
   }
+}
+
+/* infinite logo */
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--accent);
+  bottom: 100px;
+}
+
+/* code {
+  font-family: input-mono, monospace;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background);
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+* {
+  /* font-family: "Plaster", sans-serif; */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 30px;
+}
+
+.strokeText {
+  color: inherit;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.3px;
 }
