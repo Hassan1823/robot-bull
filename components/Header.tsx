@@ -11,10 +11,13 @@ import { HiMenuAlt4 } from "react-icons/hi";
 import logo from "@/public/robotbull-logo.png";
 
 import { Link } from "react-scroll/modules";
+import { useState } from "react";
 
 type Props = {};
 
 const Header = (props: Props) => {
+  const [mobile, setMobile] = useState(false);
+
   return (
     <div className="w-full max-h-[15vh] h-auto flex lg:justify-start justify-between items-center text-center xl:px-[10%] px-[5%] space-x-[5%] duration-300 py-4 lg:bg-black bg-[#15161C] fixed top-0 left-0 z-[9999]">
       <Image
@@ -46,10 +49,35 @@ const Header = (props: Props) => {
       </div>
 
       {/* menu icons */}
-      <div className="flex lg:hidden text-center justify-center items-center lg:text-lg text-base gap-2 font-semibold text-[#3e2bc5]">
+      <button
+        className="flex lg:hidden text-center cursor-pointer justify-center items-center lg:text-lg text-base gap-2 font-semibold text-[#3e2bc5]"
+        onClick={() => setMobile(!mobile)}
+      >
         <HiMenuAlt4 className="lg:w-8 w-6 lg:h-8 h-6" />
         Menu
-      </div>
+      </button>
+      {mobile && (
+        <>
+          <div className="absolute top-[14.5vh] right-0 md:w-1/2 w-[80%] h-auto min-h-screen bg-[#3e2bc5] text-gray-900 duration-300 ease-in-out flex flex-col justify-start items-center text-center gap-8 pt-[5%]">
+            {NavDataItems.map((item: any, index: number) => (
+              <Link
+                key={index}
+                activeClass="active"
+                to={item.src}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setMobile(false)}
+              >
+                <span className="hover:text-black cursor-pointer duration-500 text-4xl font-extrabold">
+                  {item.name}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };
