@@ -19,7 +19,7 @@ const Header = (props: Props) => {
   const [mobile, setMobile] = useState(false);
 
   return (
-    <div className="w-full max-h-[15vh] h-auto flex lg:justify-start justify-between items-center text-center xl:px-[10%] px-[5%] space-x-[5%] duration-300 py-4 lg:bg-black bg-[#15161C] fixed top-0 left-0 z-[9999]">
+    <div className="w-screen max-h-[15vh] h-auto flex lg:justify-start justify-between items-center text-center xl:px-[10%] px-[5%] space-x-[5%] duration-300 py-4 lg:bg-black bg-[#15161C] fixed top-0 left-0 z-[9999]">
       <Image
         src={logo}
         alt="logo"
