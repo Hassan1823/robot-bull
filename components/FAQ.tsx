@@ -8,7 +8,7 @@ type Props = {};
 
 const FAQComp = (props: Props) => {
   return (
-    <div className="w-full h-auto flex flex-col max-xl:px-[5%] px-[10%] gap-8 pt-[20vh] justify-center lg:items-start items-center">
+    <div className="w-full h-auto flex flex-col max-xl:px-[5%] px-[10%] gap-8 py-[20vh] justify-center lg:items-start items-center">
       {/* top button */}
       <motion.button
         variants={fadeInAnimationVariants}
@@ -45,7 +45,7 @@ const FAQComp = (props: Props) => {
         initial="initial"
         whileInView="animate"
         custom={10}
-        className="p-4 bg-transparent rounded-lg w-full"
+        className="p-4 bg-transparent rounded-lg w-full space-y-4"
       >
         {/* <AccordionComp /> */}
         <AccordionComp

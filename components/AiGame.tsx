@@ -4,6 +4,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { fadeInAnimationVariants } from "./Hero";
+import { TracingBeamDemo } from "@/utils/TracingBeamDemo";
 
 type Props = {};
 
@@ -427,6 +428,11 @@ const AiGameComp = (props: Props) => {
             <h1 className="font-medium text-base text-slate-400">{`Display and sell these digital masterpieces in an unprecedented manner, unlocking a new level of appreciation.`}</h1>
           </motion.div>
         </div>
+      </div>
+
+      {/* road map slide */}
+      <div className="w-full h-auto lg:block hidden">
+        <TracingBeamDemo />
       </div>
     </>
   );

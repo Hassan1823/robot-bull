@@ -72,6 +72,7 @@ const GeneratorComp = (props: Props) => {
             </button>
           </motion.div>
         </div>
+
         {/* right div */}
         <div className="lg:w-1/2 w-full h-auto flex flex-col justify-evenly items-center space-y-4 lg:px-4 px-8">
           <motion.h1

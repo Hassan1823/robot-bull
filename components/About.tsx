@@ -106,7 +106,7 @@ const AboutComp = (props: Props) => {
           <Link
             href={"https://twitter.com/elonmusk/status/1740023004992548930"}
             target="_blank"
-            className="text-xs text-white font-semibold text-center w-full"
+            className="text-xs text-white font-semibold text-center w-full flex flex-wrap px-8"
           >
             {"https://twitter.com/elonmusk/status/1740023004992548930"}
           </Link>

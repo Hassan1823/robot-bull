@@ -23,7 +23,7 @@ const TokenomicsComp = (props: Props) => {
   };
 
   return (
-    <div className="w-full h-auto flex flex-col max-xl:px-[5%] px-[10%] gap-8 pt-[10vh]">
+    <div className="w-full h-auto flex flex-col max-xl:px-[5%] px-[10%] gap-8 pt-[20vh]">
       {/* title */}
       <motion.div
         className="text-7xl max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl text-center font-semibold w-full flex flex-wrap justify-center items-center h-auto "
@@ -57,7 +57,7 @@ const TokenomicsComp = (props: Props) => {
         whileInView="animate"
         custom={5}
       >
-        <p className="font-medium md:text-base text-sm">{text}</p>
+        <p className="font-medium md:text-sm text-xs">{text}</p>
         <button
           className="px-6 py-2 border rounded-full font-semibold bg-[#3e2bc5] border-transparent"
           onClick={handleClick}
@@ -70,7 +70,7 @@ const TokenomicsComp = (props: Props) => {
       <div className="w-full h-auto flex flex-wrap justify-center items-center">
         <div className="sm:w-1/2 w-full border p-2 space-y-4">
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto "
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto "
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -80,7 +80,7 @@ const TokenomicsComp = (props: Props) => {
           </motion.div>
 
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto text-slate-400"
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto text-slate-400"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -100,7 +100,7 @@ const TokenomicsComp = (props: Props) => {
 
         <div className="sm:w-1/2 w-full h-full border p-2 space-y-4">
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto "
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto "
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -110,7 +110,7 @@ const TokenomicsComp = (props: Props) => {
           </motion.div>
 
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto text-slate-400"
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto text-slate-400"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -130,7 +130,7 @@ const TokenomicsComp = (props: Props) => {
 
         <div className="sm:w-1/2 w-full border p-2 space-y-4">
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto "
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto "
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -140,7 +140,7 @@ const TokenomicsComp = (props: Props) => {
           </motion.div>
 
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto text-slate-600"
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto text-slate-600"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -160,7 +160,7 @@ const TokenomicsComp = (props: Props) => {
 
         <div className="sm:w-1/2 w-full border p-2 space-y-4">
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto "
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto "
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -170,7 +170,7 @@ const TokenomicsComp = (props: Props) => {
           </motion.div>
 
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto text-slate-400"
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl sm:text-center text-start font-semibold w-full flex flex-wrap sm:justify-start justify-center items-center h-auto text-slate-400"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -190,11 +190,11 @@ const TokenomicsComp = (props: Props) => {
       </div>
 
       {/* pie charts */}
-      <div className="w-full h-auto flex flex-wrap justify-center items-center">
+      <div className="w-full h-auto flex flex-wrap justify-center items-center space-y-12">
         {/* left */}
-        <div className="lg:w-1/2 w-full h-auto flex flex-col justify-center items-center">
+        <div className="lg:w-1/2 w-full h-auto flex flex-col justify-center items-center space-y-4">
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base text-center font-semibold w-full flex justify-center items-center h-auto "
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl text-center font-semibold w-full flex justify-center items-center h-auto "
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -204,7 +204,7 @@ const TokenomicsComp = (props: Props) => {
           </motion.div>
 
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base text-center font-semibold w-full flex justify-center items-center h-auto text-slate-400"
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl text-center font-semibold w-full flex justify-center items-center h-auto text-slate-400"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -225,9 +225,9 @@ const TokenomicsComp = (props: Props) => {
         </div>
 
         {/* right */}
-        <div className="lg:w-1/2 w-full h-auto flex flex-col justify-center items-center">
+        <div className="lg:w-1/2 w-full h-auto flex flex-col justify-center items-center space-y-4">
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base text-center font-semibold w-full flex justify-center items-center h-auto "
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl text-center font-semibold w-full flex justify-center items-center h-auto "
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -237,7 +237,7 @@ const TokenomicsComp = (props: Props) => {
           </motion.div>
 
           <motion.div
-            className="text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base text-center font-semibold w-full flex justify-center items-center h-auto text-slate-400"
+            className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl text-center font-semibold w-full flex justify-center items-center h-auto text-slate-400"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
