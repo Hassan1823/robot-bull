@@ -1,6 +1,6 @@
+"use client";
 // ~ imports
 import Image from "next/image";
-import Link from "next/link";
 
 // ~ local imports
 import { NavDataItems } from "@/lib/data";
@@ -9,6 +9,8 @@ import { NavDataItems } from "@/lib/data";
 import { HiMenuAlt4 } from "react-icons/hi";
 
 import logo from "@/public/robotbull-logo.png";
+
+import { Link } from "react-scroll/modules";
 
 type Props = {};
 
@@ -26,8 +28,17 @@ const Header = (props: Props) => {
       {/* <NavItems /> */}
       <div className="space-x-[10%] lg:block hidden">
         {NavDataItems.map((item: any, index: number) => (
-          <Link href={item.src} key={index}>
-            <span className="hover:text-[#3e2bc5] text-white duration-500">
+          <Link
+            key={index}
+            activeClass="active"
+            to={item.src}
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            // onSetActive={handleSetActive}
+          >
+            <span className="hover:text-[#3e2bc5] cursor-pointer text-white duration-500">
               {item.name}
             </span>
           </Link>

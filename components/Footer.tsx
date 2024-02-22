@@ -1,8 +1,9 @@
+"use client";
+
 import { NavDataItems } from "@/lib/data";
-import Link from "next/link";
-import React from "react";
-import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-scroll/modules";
 
 type Props = {};
 
@@ -12,28 +13,31 @@ const FooterComp = (props: Props) => {
       {/* nav items */}
       <div className="w-full flex flex-wrap text-center text-xs justify-center items-center lg:gap-12 gap-6 lg:text-sm">
         {NavDataItems.map((item: any, index: number) => (
-          <Link href={item.src} key={index} passHref>
-            <span>{item.name}</span>
+          <Link
+            key={index}
+            activeClass="active"
+            to={item.src}
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            // onSetActive={handleSetActive}
+          >
+            <span className="hover:text-[#3e2bc5] cursor-pointer text-white duration-500">
+              {item.name}
+            </span>
           </Link>
         ))}
       </div>
 
       {/* social icons */}
       <div className="w-full flex gap-4 text-center justify-center items-center">
-        <Link
-          href={""}
-          passHref
-          className="border rounded-full border-blue-500 p-2.5 text-center"
-        >
+        <button className="border rounded-full border-blue-500 p-2.5 text-center">
           <FaXTwitter className="w-4 h-4 text-white" />
-        </Link>
-        <Link
-          href={""}
-          passHref
-          className="border rounded-full border-blue-500 p-2.5 text-center"
-        >
+        </button>
+        <button className="border rounded-full border-blue-500 p-2.5 text-center">
           <FaTelegramPlane className="w-4 h-4 text-white" />
-        </Link>
+        </button>
       </div>
 
       {/* info mail */}

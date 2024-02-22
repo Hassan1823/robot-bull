@@ -1,30 +1,30 @@
 export const NavDataItems = [
   {
     name: "Home",
-    src: "/",
+    src: "home",
   },
   {
     name: "About",
-    src: "/about",
+    src: "about",
   },
   {
     name: "Generator",
-    src: "/generator",
+    src: "generator",
   },
   {
     name: "Marketplace",
-    src: "/marketplace",
+    src: "marketplace",
   },
   {
     name: "Game",
-    src: "/game",
+    src: "aiGame",
   },
   {
     name: "Tokenomics",
-    src: "/tokenomics",
+    src: "tokenomics",
   },
   {
     name: "FAQ",
-    src: "/faq",
+    src: "faq",
   },
 ];
