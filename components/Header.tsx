@@ -58,7 +58,7 @@ const Header = (props: Props) => {
       </button>
       {mobile && (
         <>
-          <div className="absolute top-[14.5vh] right-0 md:w-1/2 w-[80%] h-auto min-h-screen bg-[#3e2bc5] text-gray-900 duration-300 ease-in-out flex flex-col justify-start items-center text-center gap-8 pt-[5%]">
+          <div className="absolute top-24 right-0 md:w-1/2 w-[80%] h-auto min-h-screen bg-[#3e2bc5] text-gray-900 duration-300 ease-in-out flex flex-col justify-start items-center text-center gap-8 pt-[5%]">
             {NavDataItems.map((item: any, index: number) => (
               <Link
                 key={index}
