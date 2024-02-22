@@ -50,7 +50,7 @@ const Header = (props: Props) => {
 
       {/* menu icons */}
       <button
-        className="flex lg:hidden text-center cursor-pointer justify-center items-center lg:text-lg text-base gap-2 font-semibold text-[#3e2bc5]"
+        className="flex lg:hidden text-center pr-3 cursor-pointer justify-center items-center lg:text-lg text-base gap-2 font-semibold text-[#3e2bc5]"
         onClick={() => setMobile(!mobile)}
       >
         <HiMenuAlt4 className="lg:w-8 w-6 lg:h-8 h-6" />
