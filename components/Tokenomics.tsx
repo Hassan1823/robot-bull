@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeInAnimationVariants } from "./Hero";
 import { useState } from "react";
 import PieChartComp from "@/utils/pie-chart";
+import { TracingBeamDemo } from "@/utils/TracingBeamDemo";
 type Props = {};
 
 const TokenomicsComp = (props: Props) => {
@@ -256,6 +257,21 @@ const TokenomicsComp = (props: Props) => {
             <PieChartComp chartType={"doughnut"} />
           </motion.div>
         </div>
+      </div>
+
+      {/* road map slide */}
+      <div className="w-full h-auto lg:block hidden pt-[20vh] space-y-12">
+        <motion.div
+          className="text-7xl max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl text-center font-semibold w-full flex flex-wrap justify-center items-center h-auto "
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          custom={3}
+        >
+          <h1>Roadmap</h1>
+        </motion.div>
+
+        <TracingBeamDemo />
       </div>
     </div>
   );
